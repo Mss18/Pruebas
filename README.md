@@ -1,2 +1,2 @@
-# JS_1-Casa
-Testeo en casa
+# Trasteando
+Pruebas y ejercicios made in na miña casa.
