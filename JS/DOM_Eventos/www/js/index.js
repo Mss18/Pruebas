@@ -45,9 +45,33 @@
 
 /*--------------------------------------------------*/
 
-const header = document.querySelector("header");
-const newParagraph = document.createElement("p");
-const newText = document.createTextNode("Este es un nuevo parrafo");
+// const header = document.querySelector("header");
+// const newParagraph = document.createElement("p");
+// const newText = document.createTextNode("Este es un nuevo parrafo");
 
-newParagraph.appendChild(newText);
-header.appendChild(newParagraph);
+// newParagraph.appendChild(newText);
+// header.appendChild(newParagraph);
+
+/*--------------------------------------------------*/
+let arr = [1, 2, 0, 0, 2, 2, 2];
+
+function ClosestEnemy(arr) {
+  let total = 0;
+  let indiceUno = arr.indexOf(1);
+  let indiceDos = arr.indexOf(2);
+
+  let result = arr.reduce((contador, num) => {
+    return contador + num;
+  }, 0);
+
+  if (result < 1) {
+    return 0;
+  } else if (indiceUno < indiceDos) {
+    total = indiceDos - indiceUno;
+  } else if (indiceUno > indiceDos) {
+    total = indiceUno - indiceDos;
+  }
+  return total;
+}
+// keep this function call here
+ClosestEnemy(readline());
