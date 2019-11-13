@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "title": "Aliens",
+    "director": "James Cameron",
+    "year": "1986",
+    "rating": "8.5"
+  },
+
+  {
+    "id": "2",
+    "title": "Matrix",
+    "director": "Wachowsky bros.",
+    "year": "1998",
+    "rating": "9"
+  }
+]
